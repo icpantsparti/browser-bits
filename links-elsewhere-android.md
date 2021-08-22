@@ -14,4 +14,4 @@ Possible secondary browsers
 | :-- | :-- |
 | [Brave browser (Android/Google Play)](https://play.google.com/store/apps/details?id=com.brave.browser) | possible secondary browser (chromium based) |
 | [Bromite browser (Android/GitHub)](https://github.com/bromite/bromite)<br>[Bromite browser (Android/F-Droid)](https://www.bromite.org/fdroid) | possible secondary browser (chromium based)<br>(use [f-droid](https://f-droid.org/) to manage updates) |
-| [Kiwi browser (Android/Google Play)](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)<br>([Kiwi browser (Android/GitHub](https://github.com/kiwibrowser/src.next)) | possible secondary browser (chromium based)<br>(allows some extensions)<br>(GitHub might have newest versions) |
+| [Kiwi browser (Android/Google Play)](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)<br>[Kiwi browser (Android/GitHub](https://github.com/kiwibrowser/src.next)) | possible secondary browser (chromium based)<br>(allows some extensions)<br>(GitHub might have newest versions) |
