@@ -1,4 +1,4 @@
-### How to view Firefox command line options/switches
+### Notes: viewing Firefox command line options/switches
 
 #### Windows
 
