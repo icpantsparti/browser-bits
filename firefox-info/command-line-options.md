@@ -1,10 +1,8 @@
 ### Notes: viewing Firefox command line options/switches
 
 ````
-// Name         : command-line-options.md
-// Project      : https://github.com/icpantsparti/browser-bits
-// Version      : 2021.08.31
 // File/Update  : https://github.com/icpantsparti/browser-bits/blob/main/firefox-info/command-line-options.md
+// Version      : 2021.08.31
 // License (MIT): https://raw.githubusercontent.com/icpantsparti/browser-bits/main/LICENSE
 // Disclaimer   : Use with care at your own risk, and verify any results
 ````
