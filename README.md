@@ -1,6 +1,13 @@
 ### browser-bits
 
-Bits of code/config/info/links for web browsers (mainly Firefox)
+````
+// File/Update  : https://github.com/icpantsparti/browser-bits/blob/main/README.md
+// Version      : 2021.08.31
+// License (MIT): https://raw.githubusercontent.com/icpantsparti/browser-bits/main/LICENSE
+// Disclaimer   : Use with care at your own risk, and verify any results
+````
+
+#### Bits of code/config/info/links for web browsers (mainly Firefox)
 
 REMEMBER: Firefox is amazing (but not perfect), **but** do not let big companies take over the web, use Firefox as much as you can, but when a site does not work in Firefox (eg sometimes video conference,bank,healthcare) use a secondary browser such as ungoogled chromium or brave, avoid "g o o g l e/c h r o m e" and "m i c r o s o f t/e d g e".
 
