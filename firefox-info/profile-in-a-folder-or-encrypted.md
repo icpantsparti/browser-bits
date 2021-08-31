@@ -28,16 +28,18 @@ you can always move the folders/files to a new larger container if you ever need
 
 #### Windows Option 1 - Use a Portable Firefox (easier)
 
-Use [portable Firefox](https://portableapps.com/apps/internet/firefox_portable)
+Use portable Firefox: https://portableapps.com/apps/internet/firefox_portable
 
 * On the download site, below the download button, choose the installer for your language.
 * When the installer runs choose where to install<br>
 (ie to the drive/path of your folder or mounted encrypted container)<br>
 default folder name is "FirefoxPortable" or change that to your own choice
-* This gives you an entirely separate Firefox program in your specified location, with a profile and cache.
+* This gives you an entirely separate Firefox program in your specified location, with profile and cache folders.
 * It seems to cope when you change the folder location or name<br>
 (so no issues if you mount an encrypted container with a different drive/path)
 * **However**, you will have to remember to check for updates.
+* See https://portableapps.com/support/firefox_portable<br>
+for info about copying an existing profile, updating, using extra profiles, and more
 
 #### Windows Option 2 - Use the Firefox installed on your PC
 
