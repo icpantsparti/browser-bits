@@ -41,6 +41,9 @@ default folder name is "FirefoxPortable" or change that to your own choice
 * **However**, you will have to remember to check for updates.
 * See https://portableapps.com/support/firefox_portable<br>
 for info about copying an existing profile, updating, using extra profiles, and more
+* Also see `FirefoxPortable/Other/Source/Readme.txt` file for various info about usage<br>
+(and an example "FirefoxPortable.ini" file, which you place in the same folder as<br>
+"FirefoxPortable.exe", for settings eg paths, parameters, splash, multiple instances)<br>
 
 #### Windows Option 2 - Use the Firefox installed on your PC
 
