@@ -17,8 +17,9 @@ It is possible to use either a Portable Firefox or a command line option to run 
 
 If you are not using system encryption (which VeraCrypt can do on Windows).
 
-With [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) you "Create Volume" and "Create an encrypted **file container**".
+With VeraCrypt: https://www.veracrypt.fr
 
+* You can use the "Create Volume" button, then "Create an encrypted **file container**".
 * Put the container file in a sensible location where you will not accidentally delete it
 * Give the container file an ".hc" extension (then clicking that file opens it with VeraCrypt)
 * The tricky part is choosing the container size (perhaps 4GB ?) and NTFS on Windows or eg EXT4 on Linux<br>
@@ -60,7 +61,7 @@ Eg you would have to change any "C:\\\\OLDPATH\\\\OLDFOLDER" to "K:\\\\NEWFOLDER
 
 (rough example)
 
-* [Download Firefox](https://www.mozilla.org/firefox/all/)
+* Download Firefox for Linux: https://www.mozilla.org/firefox/all/
 * Extract the `firefox-XX.X.X.tar.bz2` file to your folder of choice<br>
 eg `/opt/firefox-XX.X.X` or `/usr/local/bin/firefox-XX.X.X`<br>
 or somewhere under your home folder (may be `/home/USER/.local/usr/bin/firefox-XX.X.X` ??)<br>
@@ -85,4 +86,4 @@ or in an encrypted container `/media/veracrypt1/firefox-XX.X.X`
     eg copy the `/usr/share/applications/firefox.desktop` to `/home/USER/.local/share/applications/firefox-XX.XX.X.desktop`<br>
     edit the file and set the `name=firefox (profile: /PATH/MYFIREFOXPROFILENAME)`<br>
     and `exec=firefox --no-remote --profile /PATH/MYFIREFOXPROFILENAME`
-* if the profile path ever changes you will have to edit the `extensions.json` file in the profile folder
+* If the profile path ever changes you will have to edit the `extensions.json` file in the profile folder
