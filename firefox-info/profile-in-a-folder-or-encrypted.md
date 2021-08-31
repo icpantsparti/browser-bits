@@ -4,6 +4,8 @@ Firefox profiles are usually stored in your user home folder, look at `about:sup
 
 It is possible to use either a Portable Firefox or a command line option to run firefox from another folder location.
 
+---
+
 #### (Optional) Make an encrypted file container
 
 With [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) you "Create Volume" and "Create an encrypted **file container**".
@@ -12,6 +14,8 @@ With [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) you "Create Volume"
 * Give the container file an ".hc" extension (then clicking that file opens it with VeraCrypt)
 * The tricky part is choosing the container size (perhaps 4GB ?) and NTFS on Windows or eg EXT4 on Linux<br>
 you can always move the folders/files to a new larger container if you ever need to.
+
+---
 
 #### Windows Option 1 - Use a Portable Firefox (easier)
 
