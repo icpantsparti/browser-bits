@@ -1,4 +1,4 @@
-### How to run a Firefox profile located in its own folder (or encrypted folder)
+### Notes: run a Firefox profile located in its own folder (or encrypted folder)
 
 Firefox profiles are usually stored in your user home folder, look at `about:support` or `about:profiles` to see where.
 
@@ -7,6 +7,8 @@ It is possible to use either a Portable Firefox or a command line option to run 
 ---
 
 #### (Optional) Make an encrypted file container
+
+If you are not using system encryption (which VeraCrypt can do on Windows).
 
 With [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) you "Create Volume" and "Create an encrypted **file container**".
 
