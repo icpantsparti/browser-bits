@@ -1,5 +1,12 @@
 ### Notes: run a Firefox profile located in its own folder (or encrypted folder)
 
+````
+// File/Update  : https://github.com/icpantsparti/browser-bits/blob/main/firefox-info/profile-in-a-folder-or-encrypted.md
+// Version      : 2021.08.31
+// License (MIT): https://raw.githubusercontent.com/icpantsparti/browser-bits/main/LICENSE
+// Disclaimer   : Use with care at your own risk, and verify any results
+````
+
 Firefox profiles are usually stored in your user home folder, look at `about:support` or `about:profiles` to see where.
 
 It is possible to use either a Portable Firefox or a command line option to run firefox from another folder location.
