@@ -45,7 +45,7 @@ Eg you would have to change any "C:\\OLDPATH\\OLDFOLDER" to "K:\\NEWFOLDER" and 
 
 ---
 
-#### Linux Option 1 - Have a Separate Firefox in any Location
+#### Linux Option 1 - Use a Firefox application from custom location
 
 (rough example)
 
