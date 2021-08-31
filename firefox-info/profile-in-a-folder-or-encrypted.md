@@ -42,7 +42,7 @@ change "Target" to something like: `"C:\Program Files\Mozilla Firefox\firefox.ex
 (or it will use an already created/copied profile, but note below)
 * **However**, if you rename the profile folder, or you copied/moved a profile<br>
 you will have to edit the paths in the `extensions.json` file within that profile<br>
-Eg you would have to change any "C:\\OLDPATH\\OLDFOLDER" to "K:\\NEWFOLDER" and any "C:/OLDPATH/OLDFOLDER" to "K:/NEWFOLDER".<br>
+Eg you would have to change any "C:\\\\OLDPATH\\\\OLDFOLDER" to "K:\\\\NEWFOLDER" and any "C:/OLDPATH/OLDFOLDER" to "K:/NEWFOLDER".<br>
 (so when using an encrypted container it is easier to mount with the same drive/path)
 
 ---
