@@ -1,0 +1,209 @@
+/*******************************************************************************
+** [FIREFOX-PROFILE-FOLDER]/chrome/userContent.css--icpantsparti.css
+********************************************************************************
+** File/Update  : https://raw.githubusercontent.com/icpantsparti/browser-bits/main/firefox-style/chrome/userContent.css--icpantsparti.css
+** Version      : 2021.09.02
+** License (MIT): https://raw.githubusercontent.com/icpantsparti/browser-bits/main/LICENSE
+** Project      : https://github.com/icpantsparti/browser-bits
+** Disclaimer   : Use with care at your own risk, and verify any results
+********************************************************************************
+** Summary      : styling for various about:* pages (mostly to compact layout)
+********************************************************************************
+** 1) find your Firefox "Profile Directory" (load web page "about:support")
+** 2) make a folder there called "chrome"
+** 3) create/edit a file there called "userContent.css" and add the following:
+**    @import "./userContent.css--icpantsparti.css";
+** 4) save this file in the same folder as "userContent.css--icpantsparti.css"
+**    enable/disable sections by editing the preceeding line as either: /**/ /*
+** 5) load the "about:config" page and set the following, or create/edit
+**    a file in the profile folder called "user.js" to add this entry:
+**    user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+** 6) close and reopen firefox
+********************************************************************************
+** Acknowledgments: thanks to the links shown in the code below for useful info
+*******************************************************************************/
+
+
+
+
+/*******************************************************************************
+** ### highlighting on about:about
+********************************************************************************
+** highlight some of the links to other 'about:...' pages
+*******************************************************************************/
+/**/
+@-moz-document url-prefix(about:about) {
+  a[href="about:addons"], a[href="about:config"], a[href="about:debugging"],
+  a[href="about:downloads"], a[href="about:preferences"],
+  a[href="about:profiles"], a[href="about:support"] {
+    background: color-mix(in srgb, White 40%, -moz-accent-color) !important;
+    color: color-mix(in srgb, Black 40%, -moz-accent-color) !important;
+    font-weight: bold !important;
+  }
+}
+/**/
+
+
+
+
+/*******************************************************************************
+** ### compact about:profiles
+********************************************************************************
+** tip: bookmark about:profiles for easy access profile switching
+**      (eg: place it on the bookmarks toolbar or home button)
+** https://old.reddit.com/r/FirefoxCSS/comments/bmy2hm/backgroundimages_in_aboutpreferences_and/
+*******************************************************************************/
+/**/
+@-moz-document url-prefix(about:profiles) {
+  h1, hr, table tr:nth-child(1) { display: none !important; }
+  div { margin: 0 !important; padding: 0 !important; }
+  h2 { margin: 0 !important; border-top: 2px dotted !important;
+    font-size: 1em !important;}
+  h3 { margin: 0 !important; font-size: 0.7em !important; }
+  table, tr, th, td {
+    height: unset !important;      width: unset !important;
+    padding-top: 0 !important;     padding-bottom: 0 !important;
+    border-collapse: collapse !important;
+  }
+  button {
+    min-height: unset !important;  height: unset !important;
+    margin-top: 0 !important;      margin-bottom: 0 !important;
+    padding-top: 0 !important;     padding-bottom: 0 !important;
+  }
+  #profiles div:hover {
+    box-shadow: 0px 0px 50px 3px color-mix(in srgb, White 40%, -moz-accent-color) inset !important;
+  }
+}
+/**/
+
+
+
+
+/*******************************************************************************
+** ### compact about:config
+********************************************************************************
+** https://github.com/Aris-t2/CustomCSSforFx/css/aboutconfig/aboutconfig_compact_appearance.css
+*******************************************************************************/
+/**/
+@-moz-document url-prefix(about:config) {
+  *:not(.config-background) {
+    font-size: 0.98em !important;
+    min-height: 1.2em !important;
+    height: unset !important;
+  }
+  th, td { vertical-align: top !important; }
+}
+/**/
+
+
+
+
+/*******************************************************************************
+** ### compact about:addons
+********************************************************************************
+** https://github.com/Aris-t2/CustomCSSforFx/css/aboutaddons/addonlists_compact_fx68.css
+** https://github.com/Aris-t2/CustomCSSforFx/css/aboutaddons/addonlists_compact_more_compact_fx72.css
+** https://github.com/Aris-t2/CustomCSSforFx/css/aboutaddons/addonlists_show_addon_version_number_fx68.css
+** box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+** url-prefix(chrome://mozapps/content/extensions/aboutaddons.html)
+** old: url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml)
+** old: url-prefix(chrome://mozapps/content/extensions/extensions.xul)
+*******************************************************************************/
+/**/
+@-moz-document url-prefix(about:addons) {
+  :root addon-card:not([expanded="true"]) {
+    --addon-icon-size: 18px !important;
+  }
+  addon-card:not([expanded="true"]) .addon.card {
+    margin-top: 0 !important;      margin-bottom: 0 !important;
+    padding-top: 0 !important;     padding-bottom: 0 !important;
+    border: 0 !important;          box-shadow: unset !important;
+    transition: unset !important;  opacity: 1 !important;
+  }
+  addon-card:not([expanded="true"]) .addon.card:hover {
+    box-shadow: 0 -3px 0 0 color-mix(in srgb, White 40%, -moz-accent-color) !important;
+    background: color-mix(in srgb, White 40%, -moz-accent-color) !important;
+    color: color-mix(in srgb, Black 40%, -moz-accent-color) !important;
+    font-weight: bold !important;
+  }
+  addon-card:not([expanded="true"]) .card-heading-image,
+  addon-card:not([expanded="true"]) .addon.card .addon-description {
+    display: none !important;
+  }
+  addon-card:not([expanded="true"]) .addon-badge {
+    height: 16px !important;
+    width: 16px !important;
+  }
+  addon-card:not([expanded="true"]) .more-options-button {
+    height: 22px !important;
+  }
+  div:not([current-view="updates"])
+    .addon-name-link[title]:not([data-l10n-args])::after,
+  div:not([current-view="updates"])
+    .addon-name[title]:not([data-l10n-args])::after {
+    display: block !important;
+    content: attr(title) !important;
+    margin-top: -22px !important;
+  }
+}
+/**/
+
+
+
+
+/*******************************************************************************
+** ### compact about:preferences
+*******************************************************************************/
+/**/
+@-moz-document url-prefix(about:preferences) {
+  groupbox, checkbox, hbox, radio, label, h1, h2, button, menulist, input {
+    padding-top: 0 !important; padding-bottom: 0 !important;
+  }
+  h1 { font-weight: bold !important; }
+  groupbox, checkbox, hbox, radio, label, h1, h2,
+    #updateBox, #doNotTrackLearnMoreBox
+  {
+    margin-top: 0 !important; margin-bottom: 0 !important;
+  }
+  button, menulist {
+    margin-top: 0 !important;
+    min-height: 1.5em !important;  height: unset !important;
+  }
+  groupbox, .subcategory { border-top: 2px dotted !important; }
+}
+/**/
+
+
+
+
+/*******************************************************************************
+** ### highlight certain file names under [Browser Toolbox] [Style Editor]
+********************************************************************************
+** highlight file names "userChrome.css" and "userContent.css" when using:
+**   [Browser Toolbox] (Ctrl+Shift+Alt+I) [Developer Tools] [Style Editor]
+** NOTE: this CSS rule must be set in the folder/file below:
+**   [FIREFOX-PROFILE-FOLDER]/chrome_debugger_profile/chrome/userContent.css
+** NOTE: you must also create the file below (containing the user_pref):
+**   [FIREFOX-PROFILE-FOLDER]/chrome_debugger_profile/user.js
+**   user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+** https://twitter.com/myfonj/status/1387584962354982912
+** https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/
+** https://www.reddit.com/r/FirefoxCSS/comments/n91i3w/quick_way_to_find_userchromecss_in_developer_tools/
+*******************************************************************************/
+/**/
+@-moz-document url-prefix("chrome://devtools/content/styleeditor/index.xhtml") {
+  .splitview-nav label[value*="userChrome"]
+    ,.splitview-nav label[value*="userContent"] {
+    background-color: color-mix(in srgb, White 40%, -moz-accent-color) !important;
+    color: color-mix(in srgb, Black 40%, -moz-accent-color) !important;
+    font-weight: bold !important;
+  }
+}
+/**/
+
+
+
+
+/*******************************************************************************
+** [FIREFOX-PROFILE-FOLDER]/chrome/userContent.css
+*******************************************************************************/
