@@ -9,7 +9,7 @@
 
 #### Bits of code/config/info/links for web browsers (mainly Firefox)
 
-REMEMBER: Firefox is amazing (but not perfect), **but** do not let big companies take over the web, use Firefox as much as you can, but when a site does not work in Firefox (eg sometimes video conference,bank,healthcare) use a secondary browser such as ungoogled chromium or brave, avoid "g o o g l e/c h r o m e" and "m i c r o s o f t/e d g e".
+REMEMBER: Firefox is amazing (but not perfect), **but** do not let big companies take over the web, use Firefox as much as you can, but when a site does not work in Firefox (eg sometimes video conference,bank,healthcare) use a secondary browser such as ungoogled chromium or brave (and avoid (the data collecting) Google/Chrome and Microsoft/Edge).
 
 | Folder | Link | File | Note |
 | :----- | :--- | :--- | :--- |
